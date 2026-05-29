@@ -8,6 +8,7 @@ import { errorHandler, notFound } from './middleware/error.js';
 import { seedDefaultAccounts } from './utils/seed.js';
 
 dotenv.config();
+console.log("Mongo URI:", process.env.MONGODB_URI);
 
 const app = express();
 const port = process.env.PORT || 5000;
