@@ -18,6 +18,7 @@ function publicUser(user) {
 
 export async function login(req, res, next) {
   try {
+      console.log("LOGIN BODY:", req.body);
     const { userId, password } = req.body;
     const user = await User.findOne({ $or: [{ rollNumber: userId }, { email: userId }] });
 
