@@ -1,0 +1,42 @@
+:root {
+  --background: 7 9 15;
+  --foreground: 243 244 246;
+  --card: 15 19 28;
+  --border: 31 41 55;
+  --muted: 107 114 128;
+  --accent: 99 102 241;
+  --primary: 209 213 219;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.06), transparent 35%),
+    linear-gradient(180deg, rgba(8, 10, 16, 1), rgba(4, 6, 10, 1));
+  color: rgb(var(--foreground));
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+}
+
+.glass-panel {
+  background: rgba(13, 17, 24, 0.72);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.grid-mesh {
+  background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
