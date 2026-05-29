@@ -30,7 +30,8 @@
     "react-icons": "^5.5.0",
     "react-simple-captcha": "^9.0.7",
     "recharts": "^2.15.0",
-    "socket.io": "^4.8.1"
+    "socket.io": "^4.8.1",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
@@ -38,7 +39,6 @@
     "eslint": "^9.20.1",
     "eslint-config-next": "^15.1.6",
     "nodemon": "^3.1.9",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.19"
+    "postcss": "^8.5.3"
   }
 }
